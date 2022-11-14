@@ -21,4 +21,4 @@ cd mastodon-docker-patch
 PATCH_BASE_IMAGE=tootsuite/mastodon:v4.0.0rc3 ./change-max-toot-length-v3.5.3.sh 10000
 ```
 
-This will create a new local image with the tag `tootsuite/mastodon:v3.5.3-local-maxchars-10000`. You can then use this image instead of the default one. Specify another number if you would like a different limit.
+This will create a new local image with the tag `tootsuite/mastodon:v3.5.3-local-maxchars-10000` or `tootsuite/mastodon:v4.0.1-local-maxchars-10000`. You can then use this image instead of the default one. Specify another number if you would like a different limit.

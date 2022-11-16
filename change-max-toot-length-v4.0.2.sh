@@ -16,7 +16,7 @@ cd -- "$( dirname -- "${BASH_SOURCE[0]}" )"
   exit 1
 }
 
-PATCH_BASE_IMAGE=${PATCH_BASE_IMAGE:-tootsuite/mastodon:v4.0.1}
+PATCH_BASE_IMAGE=${PATCH_BASE_IMAGE:-tootsuite/mastodon:v4.0.2}
 
 CHAR_LIMIT=$1
 

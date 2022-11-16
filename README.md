@@ -22,7 +22,7 @@ This will create a new local image with the tag `tootsuite/mastodon:v4.0.2-local
 
 ## Change your Mastodon version suffix
 
-Similar to how the Glitch fork uses a `+glitch` suffix, it might be useful to show that you have modified your instance.
+Similar to how the [Glitch fork](https://github.com/glitch-soc/mastodon/) uses a `+glitch` suffix, it might be useful to show that you have modified your instance.
 
 ### Instructions
 
@@ -39,3 +39,8 @@ PATCH_BASE_IMAGE=tootsuite/mastodon:v4.0.2-local-maxchars-10000 ./make-version-s
 ```
 
 This will create a new local image with the tag `tootsuite/mastodon:v4.0.2-local-suffixmod`. You can then use this image instead of the default one.
+
+To change your version suffix, modify the environment (usually a `.env.production` file) and add the following line, replacing `+changes` with your choice of text:
+```
+MASTODON_VERSION_SUFFIX="+changes"
+```

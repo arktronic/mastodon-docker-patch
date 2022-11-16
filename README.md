@@ -11,10 +11,10 @@ Assuming you have Docker installed, you can simply clone this repo and run the s
 git clone https://github.com/arktronic/mastodon-docker-patch.git
 cd mastodon-docker-patch
 
-# For v4.0.2 (verified working with v3.5.3 as well)
+# For v4.0.2
 ./change-max-toot-length-v4.0.2.sh 10000
 
-# For another version (no guarantees of compatibility!)
+# For another version (no guarantees of compatibility, but appears to work with v3.5.3 and up)
 PATCH_BASE_IMAGE=tootsuite/mastodon:v4.0.0rc3 ./change-max-toot-length-v4.0.2.sh 10000
 ```
 

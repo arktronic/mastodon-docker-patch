@@ -31,8 +31,6 @@ RUN cd /opt/mastodon \
 EOF
 )
 
-NEW_CONTAINER_NAME=mastodon-change-max-toot-length-tmp
-
 echo "*** Creating new image with character limit set to $CHAR_LIMIT..."
 
 sudo rm -rf tmpdata/* &>/dev/null || true
